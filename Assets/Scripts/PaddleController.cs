@@ -33,7 +33,7 @@ public class PaddleController : MonoBehaviour
 
     private void MoveObject(Vector2 movement)
     {
-        Debug.Log("Paddle Position: " + _rig.velocity);
+        Debug.Log("Paddle Speed: " + _rig.velocity);
         _rig.velocity = movement; // Update paddle position
     }
 
