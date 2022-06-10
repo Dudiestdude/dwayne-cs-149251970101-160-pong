@@ -22,17 +22,23 @@ public class PaddleController : MonoBehaviour
     private Vector2 GetInput() // Scan for input
     {
         if (Input.GetKey(upKey))
-            while (transform.position.y < 3.6f)
+            if (transform.position.y < 3.6f)
                 return Vector3.up * speed; // Move paddle up
         if (Input.GetKey(downKey))
-            while (transform.position.y > -3.6f)
+            if (transform.position.y > -3.6f)
                 return Vector3.down * speed; // Move paddle down
 
-        return Vector2.zero; //
+        return Vector2.zero; // Stop paddle when no key is pressed
     }
 
     private void MoveObject(Vector2 movement)
     {
+        Debug.Log("Paddle Position: " + _rig.velocity);
         _rig.velocity = movement; // Update paddle position
+    }
+
+    public void ResetPaddle()
+    {
+        transform.position = new Vector2(transform.position.x, 0f);
     }
 }
