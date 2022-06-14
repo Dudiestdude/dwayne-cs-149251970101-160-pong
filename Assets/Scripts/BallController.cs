@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
-    public Vector2 speed;
+    public Vector2          speed;
     public PaddleController paddleLeft;
     public PaddleController paddleRight;
-    private Rigidbody2D _rig;
+    private Rigidbody2D     _rig;
 
     private void Start()
     {
@@ -41,5 +41,10 @@ public class BallController : MonoBehaviour
         // Reset Paddle Position
         paddleLeft.ResetPaddle();
         paddleRight.ResetPaddle();
+    }
+
+    public void ActivatePUSpeedUp(float magnitude)
+    {
+        _rig.velocity *= magnitude;
     }
 }

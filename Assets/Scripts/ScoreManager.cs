@@ -12,11 +12,13 @@ public class ScoreManager : MonoBehaviour
     private bool _isRight;
 
     public BallController ball;
+    public PowerUpManager powerUpManager;
 
     public void AddLeftScore(int increment)
     {
         _isRight = true;
         ball.ResetBall(_isRight); // Reset ball position and speed
+        powerUpManager.RemoveAllPowerUp(); // Remove all power ups when goal is scored
         leftScore += increment;
         if (leftScore >= maxScore)
             LeftWon(); // Go to Left Win Scene
@@ -26,6 +28,7 @@ public class ScoreManager : MonoBehaviour
     {
         _isRight = false;
         ball.ResetBall(_isRight); // Reset ball position and speed
+        powerUpManager.RemoveAllPowerUp(); // Remove all power ups when goal is scored
         rightScore += increment;
         if (rightScore >= maxScore)
             RightWon(); // Go to Right Win Scene

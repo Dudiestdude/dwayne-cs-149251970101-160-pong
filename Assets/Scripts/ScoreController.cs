@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class ScoreController : MonoBehaviour
 {
-    public Text leftScore;
-    public Text rightScore;
+    public Text         leftScore;
+    public Text         rightScore;
 
     public ScoreManager manager;
 

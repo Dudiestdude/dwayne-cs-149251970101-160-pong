@@ -303,8 +303,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1280, y: -603.3432}
-  m_SizeDelta: {x: 2560, y: 1019.4457}
+  m_AnchoredPosition: {x: 1322.5758, y: -613.3611}
+  m_SizeDelta: {x: 2474.8481, y: 1039.4816}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &798575604
 MonoBehaviour:
@@ -328,7 +328,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 106
+    m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -341,8 +341,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Controls:\n - W and S to move the left paddle\n - Up and Down Arrow Keys
     to move the right paddle\n\nHow to Play:\n - Move the paddle up and down to bounce
-    the ball\n - Make the opposing player fail to return the ball\n - First player
-    to reach 11 points wins!"
+    the ball\n - Make the opposing player fail to return the ball\n - Use the Power
+    Ups to your advantage\n - First player to reach 11 points wins!"
 --- !u!222 &798575605
 CanvasRenderer:
   m_ObjectHideFlags: 0
