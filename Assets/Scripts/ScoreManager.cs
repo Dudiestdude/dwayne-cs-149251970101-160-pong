@@ -45,4 +45,10 @@ public class ScoreManager : MonoBehaviour
         SceneManager.LoadScene("RightWon");
         Debug.Log("Right Wins");
     }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+        Debug.Log("Back to Menu");
+    }
 }

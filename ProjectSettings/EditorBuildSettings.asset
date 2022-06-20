@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RightWon.unity
     guid: 4686b9ceba2ed844f85e815a90357a96
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 25a96d468c3efbc4ca1f2880b480e929
   m_configObjects: {}

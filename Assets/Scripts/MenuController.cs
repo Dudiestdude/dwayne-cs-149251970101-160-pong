@@ -24,6 +24,11 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene("HowToPlay");
     }
 
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     public void QuitGame()
     {
         Application.Quit();

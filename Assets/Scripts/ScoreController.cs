@@ -12,6 +12,9 @@ public class ScoreController : MonoBehaviour
 
     private void Update()
     {
+        // Press Esc to return to Menu
+        if (Input.GetKey(KeyCode.Escape))
+            manager.BackToMenu();
         leftScore.text  = manager.leftScore.ToString();
         rightScore.text = manager.rightScore.ToString();
     }
